@@ -76,7 +76,16 @@ $sector = getSector();
                         <li><a class='investors' href="/investors">Investors</a></li>
                         <li><a class='financial-advisers' href="/financial-advisers">Financial Advisers</a></li>
                     </ul>
-                <?php else: ?>
+                <?php elseif: ?>
+
+                    <?php
+                        if ($sector == 'events'):
+                            do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        else:
+                            do_action('display_navigation', 'investor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        endif;
+                    ?>
+                    <?php else: ?>
 
                     <?php
                         if ($sector == 'financial-advisers'):

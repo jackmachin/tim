@@ -7,7 +7,7 @@
  * @subpackage Tatton
  */
 
-$sector = 'financial-advisers';
+$sector = getSector();
 
 get_header();
 
