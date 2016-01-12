@@ -70,20 +70,19 @@ $sector = getSector();
 
                 <p class="navbar-right navbar__phone hidden-xs"><a href="tel: <?php the_field('contact_phone', 'option'); ?>"><span>t//</span><?php the_field('contact_phone', 'option'); ?></a></p>
 
-                <?php if (is_front_page() || ($sector != 'investors' && $sector != 'financial-advisers' && $sector != 'events')): ?>
+                <?php if (is_front_page() || ($sector != 'investors' && $sector != 'financial-advisers' && $sector != 'events' && $sector != 'event')): ?>
 
                     <ul class="nav navbar-nav navbar-right navbar--sections">
                         <li><a class='investors' href="/investors">Investors</a></li>
                         <li><a class='financial-advisers' href="/financial-advisers">Financial Advisers</a></li>
                     </ul>
 
-                    <?php elseif   ($sector == 'events'):
-                        do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
-                    ?>
                     <?php else: ?>
 
                     <?php
                         if ($sector == 'financial-advisers'):
+                            do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        elseif ($sector == array ('events','event'):
                             do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
                         else:
                             do_action('display_navigation', 'investor_menu', 'nav navbar-nav navbar-right navbar--menu');
