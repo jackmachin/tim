@@ -77,7 +77,7 @@ $sector = getSector();
                         <li><a class='financial-advisers' href="/financial-advisers">Financial Advisers</a></li>
                     </ul>
 
-                    <?php elseif  ( is_page_template( 'page-calendar.php' ) ):
+                    <?php elseif   ($sector == 'events'):
                         do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
                     ?>
                     <?php else: ?>
