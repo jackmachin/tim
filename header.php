@@ -81,6 +81,8 @@ $sector = getSector();
                     <?php
                         if ($sector == 'financial-advisers'):
                             do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                        elseif: ($sector == 'events'):
+                            do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
                         else:
                             do_action('display_navigation', 'investor_menu', 'nav navbar-nav navbar-right navbar--menu');
                         endif;
