@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Calendar Page
- * Displays Hidden Page
+ * Displays Calendar page
  *
  * @package WordPress
  * @subpackage Tatton
