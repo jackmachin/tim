@@ -76,6 +76,10 @@ $sector = getSector();
                         <li><a class='investors' href="/investors">Investors</a></li>
                         <li><a class='financial-advisers' href="/financial-advisers">Financial Advisers</a></li>
                     </ul>
+
+                    <?php elseif  ( is_page_template( 'page-calendar.php' ) ):
+                        do_action('display_navigation', 'financial_advisor_menu', 'nav navbar-nav navbar-right navbar--menu');
+                    ?>
                     <?php else: ?>
 
                     <?php
