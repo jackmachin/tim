@@ -30,7 +30,13 @@ if (is_user_logged_in()): ?>
 <div class="container">
 	<div class="row mt-lg">
 		<div class="col-xs-12 content mt-lg mb-lg">
-            <p>Calendar stuff
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                <?php the_content(); ?>
+
+            <?php endwhile; else : ?>
+
+            <?php endif; ?>
 		</div>
 	</div>
 </div>
