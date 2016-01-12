@@ -70,7 +70,7 @@ $sector = getSector();
 
                 <p class="navbar-right navbar__phone hidden-xs"><a href="tel: <?php the_field('contact_phone', 'option'); ?>"><span>t//</span><?php the_field('contact_phone', 'option'); ?></a></p>
 
-                <?php if (is_front_page() || ($sector != 'investors' && $sector != 'financial-advisers')): ?>
+                <?php if (is_front_page() || ($sector != 'investors' && $sector != 'financial-advisers' && $sector != 'events')): ?>
 
                     <ul class="nav navbar-nav navbar-right navbar--sections">
                         <li><a class='investors' href="/investors">Investors</a></li>
