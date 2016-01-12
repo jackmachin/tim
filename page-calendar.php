@@ -44,7 +44,7 @@ if (is_user_logged_in()): ?>
 <?php else:
 ?>
 <section>
-    <div class="hero">
+    <div class="hero" style="background-image: url(http://www.tattoninvestments.com/tim-assets/uploads/Tree02.jpg);">
         <div class="hero__overlay"></div>
         <div class="hero__content">
             <div class="container">
