@@ -130,6 +130,7 @@ function my_login_logo() { ?>
             background-image: url(http://www.tattoninvestments.com/tim-assets/themes/tim/assets/img/logo.svg);
             padding-bottom: 30px;
             background-size: 211px;
+            width:211px;
         }
     </style>
 <?php }
