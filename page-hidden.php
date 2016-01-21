@@ -91,7 +91,7 @@ else:
 			<?php do_action('custom_login'); ?>
 		</div>
         <div class="col-sm-5 col-sm-offset-2 mb-lg">
-            <p>To find out more about gaining access to our IFA resources visit our <a href="/contact">contact</a> page.</p>
+            <p>To gain access to our IFA resources please register <a href="http://www.tattoninvestments.com/wp-login.php?action=register">here</a>.</p>
         </div>
 	</div>
 </div>

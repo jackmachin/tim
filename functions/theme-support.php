@@ -123,3 +123,13 @@ function debug($message)
 		error_log(print_r($message, true));
 	}
 }
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(http://www.tattoninvestments.com/tim-assets/themes/tim/assets/img/logo.svg);
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
