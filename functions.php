@@ -63,3 +63,13 @@ add_action('wp_enqueue_scripts', 'ttEnqueueStyles');
  */
 require_once('functions/javascripts.php');
 add_action('wp_enqueue_scripts', 'ttEnqueueJs');
+
+function my_translate() {
+
+   $your_content = ob_get_contents();
+   $your_content = preg_replace( '/\<label for="user_login"\>(.*?)\<br/', 'Create Username: ', $content );
+
+   ob_get_clean();
+   echo $your_content;
+}
+add_action( 'register_form', 'my_translate' );
