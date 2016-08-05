@@ -67,7 +67,8 @@ add_action('wp_enqueue_scripts', 'ttEnqueueJs');
 function my_translate() {
 
    $your_content = ob_get_contents();
-   $your_content = preg_replace( '/\<label for="user_login"\>(.*?)\<br/', 'Create Username: ', $content );
+   $your_content = preg_replace( '/\<label for="user_login"\>(.*?)\<br/', 'Usernumia: ', $content );
+   $your_content = preg_replace( '/\<label for="user_email"\>(.*?)\<br/', 'Email Sior:', $content );
 
    ob_get_clean();
    echo $your_content;
