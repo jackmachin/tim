@@ -20,6 +20,7 @@ if (have_posts()) : while (have_posts()) : the_post();
     $twitter_link   = "http://twitter.com/home?status=".urlencode($title)."+".urlencode($permalink);
     $facebook_link  = "https://www.facebook.com/sharer/sharer.php?u=".urlencode($permalink);
     $linkedin_link  = "https://www.linkedin.com/shareArticle?mini=true&url=".urlencode($permalink)."&title=".urlencode($title);
+    $video = get_field('video_embed');
 ?>
 
     <section class="news">
@@ -39,6 +40,7 @@ if (have_posts()) : while (have_posts()) : the_post();
                     <img class="hidden-xs" src="<?php echo $image[0]; ?>" alt="">
                     <div>
                         <?php the_content(); ?>
+                        <?php echo $video;?>
                     </div>
                 </div>
             </div>
